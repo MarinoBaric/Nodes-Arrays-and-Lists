@@ -7,10 +7,6 @@
 [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/MarinoBaric/Nodes-Arrays-and-Lists/issues)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/MarinoBaric/Nodes-Arrays-and-Lists/main/assets/data-structures-animation.gif" alt="Data Structures Animation" width="500"/>
-</p>
-
 **Interactive exploration of fundamental Java data structures with visual examples and practical implementations**
 
 [Key Features](#key-features) • [Getting Started](#getting-started) • [Data Structures](#data-structures) • [Contributing](#contributing) • [License](#license)
@@ -34,7 +30,7 @@ This repository serves as a comprehensive resource for understanding the core fo
 ## ✨ Key Features
 
 - **Interactive Examples**: Run and modify code to see concepts in action
-- **Visual Explanations**: Diagrams and animations that illustrate how data structures work
+- **Visual Explanations**: Diagrams and code samples that illustrate how data structures work
 - **Performance Analysis**: Time and space complexity comparisons
 - **Practical Use Cases**: Real-world applications for each data structure
 - **Progressive Learning Path**: Structured from basic to advanced concepts
@@ -64,16 +60,24 @@ java examples.ArrayExample
 
 ### 1. Nodes
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/MarinoBaric/Nodes-Arrays-and-Lists/main/assets/node-diagram.png" alt="Node Diagram" width="400"/>
-</p>
-
-The fundamental building block for many data structures. This section covers:
+Nodes are the fundamental building blocks for many data structures. This section covers:
 
 - Node implementation in Java
 - Memory allocation and references
 - Creating chains of nodes
 - Practical applications
+
+```
+┌───────────┐      ┌───────────┐      ┌───────────┐
+│  Node 1   │      │  Node 2   │      │  Node 3   │
+│ ┌───────┐ │      │ ┌───────┐ │      │ ┌───────┐ │
+│ │ Data  │ │      │ │ Data  │ │      │ │ Data  │ │
+│ └───────┘ │      │ └───────┘ │      │ └───────┘ │
+│ ┌───────┐ │      │ ┌───────┐ │      │ ┌───────┐ │
+│ │ Next──┼─┼─────►│ │ Next──┼─┼─────►│ │ Next  │ │
+│ └───────┘ │      │ └───────┘ │      │ └───────┘ │
+└───────────┘      └───────────┘      └───────────┘
+```
 
 <details>
 <summary>Example Node Implementation</summary>
@@ -95,16 +99,23 @@ public class Node<T> {
 
 ### 2. Arrays
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/MarinoBaric/Nodes-Arrays-and-Lists/main/assets/array-visualization.png" alt="Array Visualization" width="400"/>
-</p>
-
-Fixed-size collections of elements with contiguous memory allocation. This section covers:
+Arrays are fixed-size collections of elements with contiguous memory allocation. This section covers:
 
 - Static arrays in Java
 - Multi-dimensional arrays
 - Array manipulation algorithms
 - Time complexity analysis
+
+```
+┌─────┬─────┬─────┬─────┬─────┬─────┐
+│  0  │  1  │  2  │  3  │  4  │  5  │  <- Indices
+├─────┼─────┼─────┼─────┼─────┼─────┤
+│ 42  │ 17  │ 9   │ 36  │ 25  │ 8   │  <- Values
+└─────┴─────┴─────┴─────┴─────┴─────┘
+   ▲
+   │
+array[0] = 42
+```
 
 <details>
 <summary>Common Array Operations</summary>
@@ -120,16 +131,29 @@ Fixed-size collections of elements with contiguous memory allocation. This secti
 
 ### 3. Lists
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/MarinoBaric/Nodes-Arrays-and-Lists/main/assets/list-types.png" alt="List Types" width="500"/>
-</p>
-
-Dynamic data structures that grow and shrink as needed. This section covers:
+Lists are dynamic data structures that grow and shrink as needed. This section covers:
 
 - ArrayList implementation and usage
 - LinkedList (Singly and Doubly)
 - Custom list implementations
 - Comparing list performance
+
+#### ArrayList vs LinkedList:
+
+```
+ArrayList:
+┌─────┬─────┬─────┬─────┬─────┬─────┐
+│  0  │  1  │  2  │  3  │  4  │  5  │
+├─────┼─────┼─────┼─────┼─────┼─────┤
+│ 42  │ 17  │ 9   │ 36  │ 25  │ 8   │
+└─────┴─────┴─────┴─────┴─────┴─────┘
+
+LinkedList:
+┌────────┐     ┌────────┐     ┌────────┐
+│ Value: │     │ Value: │     │ Value: │
+│   42   │ ──► │   17   │ ──► │   9    │ ──► ...
+└────────┘     └────────┘     └────────┘
+```
 
 <details>
 <summary>List Types Comparison</summary>
@@ -168,7 +192,7 @@ Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details.
 ### Areas for Contribution
 
 - Additional examples and implementations
-- Improved visualizations or animations
+- Improved visualizations or diagrams
 - Documentation enhancements
 - Performance optimizations
 - New exercises and solutions
