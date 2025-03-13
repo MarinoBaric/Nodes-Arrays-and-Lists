@@ -3,7 +3,7 @@
 # 🔄 Nodes, Arrays & Lists in Java
 
 [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg?style=for-the-badge)](https://github.com/MarinoBaric/Nodes-Arrays-and-Lists/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/MarinoBaric/Nodes-Arrays-and-Lists/graphs/commit-activity)
 [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/MarinoBaric/Nodes-Arrays-and-Lists/issues)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
